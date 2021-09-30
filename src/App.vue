@@ -5,16 +5,17 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Header from '@/components/Header.vue'
+// import axios from '@/utils/axios'
 
 export default defineComponent({
   components: {
     Header
-  },
-  data() {
-    return {
-      title: 'Hello World!'
-    }
   }
+  // data() {
+  //   return {
+  //     title: 'Hello World!'
+  //   }
+  // }
 })
 </script>
 

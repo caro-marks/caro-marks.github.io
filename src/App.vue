@@ -8,51 +8,78 @@
         </h2>
         <img src="@/static/images/selfie.jpeg" alt="" />
       </section>
+      <div class="container">
+        <h2>General info</h2>
+        <ul>
+          <li v-for="(value, key) in allData.general.presentation" :key="key">
+            <p>{{ value }}</p>
+          </li>
+        </ul>
+      </div>
     </header>
-    <div class="container">
-      <h2>General info</h2>
-      <ul>
-        <li v-for="(value, key) in allData.general.presentation" :key="key">
-          <p>{{ value }}</p>
-        </li>
-      </ul>
-    </div>
-    <div class="container">
-      <h2>Experiences</h2>
-      <h3>Professional</h3>
-      <ul>
-        <li v-for="(value, key) in allData.experiences.professional" :key="key">
-          <p>{{ value }}</p>
-        </li>
-      </ul>
-      <h3>Educational</h3>
-      <ul>
-        <li v-for="(value, key) in allData.experiences.scholars" :key="key">
-          <p>{{ value }}</p>
-        </li>
-      </ul>
-    </div>
-    <div class="container">
+    <body>
       <h2>Skills</h2>
-      <h3>Advanced</h3>
-      <ul>
-        <li v-for="(value, key) in allData.skills.advanced" :key="key">
-          <p>{{ value }}</p>
-        </li>
-      </ul>
-      <h3>Advancing</h3>
-      <ul>
-        <li v-for="(value, key) in allData.skills.medium" :key="key">
-          <p>{{ value }}</p>
-        </li>
-      </ul>
-      <h3>Soft</h3>
-      <ul>
-        <li v-for="(value, key) in allData.skills.complementars" :key="key">
-          <p>{{ value }}</p>
-        </li>
-      </ul>
-    </div>
+      <div class="skills">
+        <section class="container">
+          <h3>Advanced</h3>
+          <ul>
+            <li v-for="(value, key) in allData.skills.advanced" :key="key">
+              <p>{{ value }}</p>
+            </li>
+          </ul>
+        </section>
+        <section class="container">
+          <h3>Advancing</h3>
+          <ul>
+            <li v-for="(value, key) in allData.skills.medium" :key="key">
+              <p>{{ value }}</p>
+            </li>
+          </ul>
+        </section>
+        <section class="container">
+          <h3>Soft</h3>
+          <ul>
+            <li v-for="(value, key) in allData.skills.complementars" :key="key">
+              <p>{{ value }}</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <h2>Experiences</h2>
+      <div class="experiences">
+        <section class="container">
+          <h3>Professional</h3>
+          <ul>
+            <li
+              v-for="(value, key) in allData.experiences.professional"
+              :key="key"
+            >
+              <p>{{ value }}</p>
+            </li>
+          </ul>
+        </section>
+        <section class="container">
+          <h3>Educational</h3>
+          <ul>
+            <li v-for="(value, key) in allData.experiences.scholars" :key="key">
+              <p>{{ value }}</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </body>
+    <footer>
+      <div class="container">
+        <h2>Hire me!</h2>
+        <h3>Contacts</h3>
+        <div>
+          <p>{{ allData.contacts.email }}</p>
+          <p>{{ allData.contacts.phone }}</p>
+        </div>
+        <a href="{{allData.contacts.linkedin}}">Linkedin</a>
+        <a href="{{allData.contacts.github}}">Github</a>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -79,6 +106,15 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.skills {
+  columns: 20vh 3;
+}
+
+.experiences {
+  columns: 30vh 2;
+  /* column-rule: 20vh double; */
+}
+
 .container {
   margin: 4rem auto;
   max-width: 500px;

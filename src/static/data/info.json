@@ -1,7 +1,7 @@
 {
   "general": {
     "title": "Hello World!",
-    "names": ["Marcos Alexandre", "Brito Nolasco"],
+    "names": ["Marcos", "Alexandre", "Brito", "Nolasco"],
     "age": 28,
     "location": {
       "country": "Brasil",
@@ -9,9 +9,9 @@
       "city": "Florianópolis"
     },
     "presentation": [
-      "I'm a physicist (studying the universe is amazing!)",
-      "an educator (helping others understand things is great!)",
-      "and a developer (the future technology is awesome!)."
+      "An physicist (cause Universe is amazing!)",
+      "An educator (cause helping others is great!)",
+      "An a programmer (cause technologies are awesome!)."
     ]
   },
   "contacts": {
@@ -31,7 +31,7 @@
     ],
     "scholars": [
       "Physics Course - UFPel",
-      "Data Sciente - Udemy",
+      "Data Science - Udemy",
       "Data Analysis Fundamentals - DSA",
       "Django - Alura",
       "FrontEnd - Alura",
@@ -41,32 +41,18 @@
   "skills": {
     "advanced": [
       "Physics",
-      "Calculus",
-      "Logic",
       "Python",
-      "Data Analysis",
       "Pandas",
-      "Matplotlib",
       "Django",
       "Django Rest Framework"
     ],
-    "medium": [
-      "HTML 5",
-      "CSS 3",
-      "JavaScript",
-      "TypeScript",
-      "LATEX",
-      "Vue.js",
-      "Docker",
-      "Git",
-      "AWS services"
-    ],
+    "medium": ["JavaScript", "Vue.js", "Docker", "Git", "AWS services"],
     "complementars": [
-      "Advanced English",
+      "Upper Intermediate English",
       "Scrum Agile Methodology",
       "Communication Skills",
       "Emotional Inteligence",
-      "Leadership"
+      "Creativity Boost"
     ]
   }
 }

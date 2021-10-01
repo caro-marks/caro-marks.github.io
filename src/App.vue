@@ -1,11 +1,55 @@
 <template>
   <div class="home">
+    <header>
+      <h1>{{ allData.general.title }}</h1>
+      <section>
+        <h2 v-for="name in allData.general.names" :key="name.id">
+          {{ name }}
+        </h2>
+        <img src="@/static/images/selfie.jpeg" alt="" />
+      </section>
+    </header>
     <div class="container">
+      <h2>General info</h2>
       <ul>
-        <li v-for="(value, key) in allData" :key="key">
-          <p>
-            {{ value }}
-          </p>
+        <li v-for="(value, key) in allData.general.presentation" :key="key">
+          <p>{{ value }}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <h2>Experiences</h2>
+      <h3>Professional</h3>
+      <ul>
+        <li v-for="(value, key) in allData.experiences.professional" :key="key">
+          <p>{{ value }}</p>
+        </li>
+      </ul>
+      <h3>Educational</h3>
+      <ul>
+        <li v-for="(value, key) in allData.experiences.scholars" :key="key">
+          <p>{{ value }}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <h2>Skills</h2>
+      <h3>Advanced</h3>
+      <ul>
+        <li v-for="(value, key) in allData.skills.advanced" :key="key">
+          <p>{{ value }}</p>
+        </li>
+      </ul>
+      <h3>Advancing</h3>
+      <ul>
+        <li v-for="(value, key) in allData.skills.medium" :key="key">
+          <p>{{ value }}</p>
+        </li>
+      </ul>
+      <h3>Soft</h3>
+      <ul>
+        <li v-for="(value, key) in allData.skills.complementars" :key="key">
+          <p>{{ value }}</p>
         </li>
       </ul>
     </div>
@@ -49,39 +93,17 @@ export default defineComponent({
   margin: 0.7rem 0;
 }
 
-form {
-  display: grid;
-  grid-gap: 1rem;
+header {
+  padding: 2rem 0 4rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-input {
-  background: transparent;
-  border: 1px solid #999fc6;
-  border-radius: 1rem;
-  padding: 0.6rem;
-  outline: none;
-  color: #e1e8ef;
-}
-
-input::placeholder {
-  color: #999fc6;
-}
-
-button {
-  background-color: #2d6cea;
-  color: #e1e8ef;
-  border: none;
-  border-radius: 1rem;
-  padding: 0.6rem 1.5rem;
-  width: max-content;
-  transition: all 0.3s linear;
-  outline: none;
-  cursor: pointer;
-  box-shadow: 0 0 5px 3px rgba(45, 108, 234, 0.3);
-}
-
-button:hover {
-  background-color: #1b5cdc;
+header img {
+  max-width: 150px;
+  border-radius: 50px;
 }
 
 p {
@@ -102,42 +124,5 @@ li {
   position: relative;
   list-style: none;
   color: #8b98a8;
-}
-
-.destroy {
-  background-color: #d53e6b;
-  width: 24px;
-  height: 24px;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.2s linear;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 1.3rem;
-}
-
-.destroy:before,
-.destroy:after {
-  content: '';
-  width: 3px;
-  height: 13px;
-  background-color: #ececf6;
-  border-radius: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.destroy:before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.destroy:after {
-  transform: translate(-50%, -50%) rotate(130deg);
-}
-
-.destroy:hover {
-  background-color: #984848;
 }
 </style>

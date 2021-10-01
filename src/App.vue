@@ -1,23 +1,20 @@
 <template>
   <div class="home">
-    <header>
-      <h1>{{ allData.general.title }}</h1>
-      <section>
-        <h2 v-for="name in allData.general.names" :key="name.id">
-          {{ name }}
-        </h2>
-        <img src="@/static/images/selfie.jpeg" alt="" />
-      </section>
-      <div class="container">
-        <h2>General info</h2>
-        <ul>
-          <li v-for="(value, key) in allData.general.presentation" :key="key">
-            <p>{{ value }}</p>
-          </li>
-        </ul>
+    <section class="header">
+      <div class="hello">
+        <h1>{{ title }}</h1>
+        <div>
+          <h2>I'm {{ names[0] }} {{ names[3] }}!</h2>
+          <ul class="world container">
+            <li v-for="value in general" :key="value.id">
+              <p>{{ value }}</p>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
-    <body>
+      <img src="@/static/images/selfie.jpeg" alt="Me smiling at a pic" />
+    </section>
+    <section class="body">
       <h2>Skills</h2>
       <div class="skills">
         <section class="container">
@@ -29,7 +26,7 @@
           </ul>
         </section>
         <section class="container">
-          <h3>Advancing</h3>
+          <h3>Improving</h3>
           <ul>
             <li v-for="(value, key) in allData.skills.medium" :key="key">
               <p>{{ value }}</p>
@@ -37,7 +34,7 @@
           </ul>
         </section>
         <section class="container">
-          <h3>Soft</h3>
+          <h3>Complementary</h3>
           <ul>
             <li v-for="(value, key) in allData.skills.complementars" :key="key">
               <p>{{ value }}</p>
@@ -67,19 +64,20 @@
           </ul>
         </section>
       </div>
-    </body>
-    <footer>
-      <div class="container">
-        <h2>Hire me!</h2>
-        <h3>Contacts</h3>
-        <div>
-          <p>{{ allData.contacts.email }}</p>
-          <p>{{ allData.contacts.phone }}</p>
-        </div>
-        <a href="{{allData.contacts.linkedin}}">Linkedin</a>
-        <a href="{{allData.contacts.github}}">Github</a>
+    </section>
+    <section class="footer">
+      <h2>Contact me!</h2>
+      <div class="contacts">
+        <a href=""><strong>E-mail</strong> : marcosabn08@gmail.com</a>
+        <a href=""><strong>WhatsApp</strong> : +55 53 99701 0399</a>
+        <a href="https://www.linkedin.com/in/caro-marks"
+          ><strong>Linkedin</strong>: /in/caro-marks</a
+        >
+        <a href="https://www.github.com/caro-marks"
+          ><strong>Github</strong>: /caro-marks</a
+        >
       </div>
-    </footer>
+    </section>
   </div>
 </template>
 
@@ -90,13 +88,19 @@ import axios from '@/utils/axios'
 export default defineComponent({
   data() {
     return {
-      allData: []
+      allData: [],
+      title: '',
+      names: [],
+      general: []
     }
   },
   methods: {
     async fetchData() {
       const { data } = await axios.get('/info.json')
       this.allData = data
+      this.title = data.general.title
+      this.names = data.general.names
+      this.general = data.general.presentation
     }
   },
   created() {
@@ -106,13 +110,52 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.home {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 0.5rem;
+}
+
+.header {
+  padding: 2rem 0 4rem;
+  text-align: center;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.header img {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.hello {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 2.5em;
+}
+
+.world {
+  grid-gap: 1.5rem;
+}
+
+.body {
+  text-align: center;
+  display: grid;
+  grid-auto-flow: row;
+}
+
 .skills {
-  columns: 20vh 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2.5%;
 }
 
 .experiences {
-  columns: 30vh 2;
-  /* column-rule: 20vh double; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5%;
 }
 
 .container {
@@ -120,30 +163,18 @@ export default defineComponent({
   max-width: 500px;
   width: 90%;
   display: grid;
-  grid-gap: 2.5rem;
 }
 
-.title {
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0.7rem 0;
-}
-
-header {
-  padding: 2rem 0 4rem;
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
-header img {
-  max-width: 150px;
-  border-radius: 50px;
-}
-
-p {
-  margin: 0;
+.contacts {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 0.5rem;
 }
 
 ul {
@@ -160,5 +191,10 @@ li {
   position: relative;
   list-style: none;
   color: #8b98a8;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 </style>

@@ -9,9 +9,9 @@
       "city": "Florianópolis"
     },
     "presentation": [
-      "an physicist (cause Universe is amazing!)",
-      "an educator (cause helping others is great!)",
-      "an a programmer (cause technologies are awesome!)."
+      "An physicist (cause Universe is amazing!)",
+      "An educator (cause helping others is great!)",
+      "An a programmer (cause technologies are awesome!)."
     ]
   },
   "contacts": {
@@ -31,7 +31,7 @@
     ],
     "scholars": [
       "Physics Course - UFPel",
-      "Data Sciente - Udemy",
+      "Data Science - Udemy",
       "Data Analysis Fundamentals - DSA",
       "Django - Alura",
       "FrontEnd - Alura",
@@ -52,7 +52,7 @@
       "Scrum Agile Methodology",
       "Communication Skills",
       "Emotional Inteligence",
-      "Leadership"
+      "Creativity Boost"
     ]
   }
 }

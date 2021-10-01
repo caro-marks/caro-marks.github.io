@@ -46,17 +46,7 @@
       "Django",
       "Django Rest Framework"
     ],
-    "medium": [
-      "HTML 5",
-      "CSS 3",
-      "JavaScript",
-      "TypeScript",
-      "LATEX",
-      "Vue.js",
-      "Docker",
-      "Git",
-      "AWS services"
-    ],
+    "medium": ["JavaScript", "Vue.js", "Docker", "Git", "AWS services"],
     "complementars": [
       "Upper Intermediate English",
       "Scrum Agile Methodology",

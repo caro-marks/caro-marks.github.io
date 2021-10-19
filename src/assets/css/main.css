@@ -1,9 +1,25 @@
 body {
-  background: #18243c;
-  color: #e1e8ef;
-  font-family: 'Montserrat', 'Avenir', 'Helvetica', 'Arial', sans-serif;
+  background-color: #eef2f6;
+  font-family: Lato;
   font-size: 16px;
-  min-height: 100%;
-  height: 100%;
-  margin: 2rem;
+}
+
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('~@/assets/fonts/Lato-Regular.ttf');
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('~@/assets/fonts/Lato-Bold.ttf');
+  font-weight: 700;
+  font-display: block;
 }

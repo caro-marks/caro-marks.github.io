@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <Logo />
+    <Header />
+    <Presentation />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Logo } from '@/components/atoms'
-// import axios from '@/utils/axios'
+import { Header, Presentation } from '@/components/organisms'
 
 export default defineComponent({
   components: {
-    Logo
+    Header,
+    Presentation
   }
-  // data() {
-  //   return {}
-  // },
-  // methods: {},
-  // created() {}
 })
 </script>
 
 <style scoped>
 #app {
-  width: 10%;
+  margin: 0;
+  padding: 1em;
+  background: #27d1b4;
 }
 </style>

@@ -1,17 +1,21 @@
 <template>
   <div class="presentation">
-    <div class="hi">
-      <span>I am</span>
-      <Logo />
+    <div class="hey">
+      <img class="selfie" src="@/assets/images/selfie.jpeg" alt="Me smiling!" />
     </div>
-    <img class="selfie" src="@/assets/images/selfie.jpeg" alt="Me smiling!" />
-    <SocialNetwork />
+    <div class="ho">
+      <div class="my-name">
+        <span>My name is </span>
+        <div class="logo">MARCOS.</div>
+        <p>Jr Full Stack Developer</p>
+      </div>
+      <SocialNetwork />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Logo } from '@/components/atoms'
 import { SocialNetwork } from '@/components/molecules'
 
 export default defineComponent({
@@ -23,7 +27,6 @@ export default defineComponent({
     }
   },
   components: {
-    Logo,
     SocialNetwork
   }
 })
@@ -32,40 +35,55 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 .presentation {
-  padding: 0 0.5rem;
-  max-width: 50%;
-  min-width: 450px;
   display: grid;
-  justify-content: center;
-  row-gap: 1.5rem;
-  .hi {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    text-align: center;
-    align-items: center;
-    padding: 0.2rem 0;
-    span {
-      font-size: 2.5rem;
-      color: #c8e0f4;
-      font-family: Montserrat;
-      font-style: oblique;
-    }
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  margin: 1rem 4em;
+  widows: 80%;
+  .hey {
+    justify-self: center;
   }
   .selfie {
     max-width: 18rem;
-    justify-self: center;
     border-radius: 150px;
   }
+  .ho {
+    display: grid;
+    grid-template-rows: 1fr 40%;
+    text-align: center;
+    align-items: center;
+    max-width: 90%;
+    .my-name {
+      display: grid;
+      grid-template-rows: 20% 1fr 1fr;
+      row-gap: 1rem;
+      color: #c8e0f4;
+      font-family: Montserrat;
+      span {
+        font-size: 2.5rem;
+      }
+      .logo {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
-
 @media only screen and (max-width: 915px) {
   .presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
     max-width: 100vw;
-    .hi {
-      column-gap: 1.5rem;
+    justify-items: center;
+    .ho {
+      .my-name {
+        background: #031927;
+        border-radius: 100px;
+        padding: 2rem;
+      }
     }
   }
 }

@@ -24,11 +24,11 @@ export default defineComponent({
   display: flex;
   justify-content: space-around;
 }
-@media only screen and (min-width: 800px) {
-  .nav-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-}
+// @media only screen and (min-width: 800px) {
+//   .nav-bar {
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-around;
+//   }
+// }
 </style>

@@ -22,6 +22,12 @@ export default defineComponent({
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 .typewriter {
   width: max-content;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+    cursor: pointer;
+  }
   h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     color: #c8e0f4;

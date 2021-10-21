@@ -1,19 +1,15 @@
 <template>
   <div id="app">
-    <Container>
-      <Home />
-    </Container>
+    <Home />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Container } from '@/components/bosons'
 import { Home } from '@/components/templates'
 
 export default defineComponent({
   components: {
-    Container,
     Home
   }
 })
@@ -24,5 +20,7 @@ export default defineComponent({
   margin: 0;
   padding: 0 0.5em;
   background: #031927;
+  min-height: 333px;
+  max-height: 35vh;
 }
 </style>

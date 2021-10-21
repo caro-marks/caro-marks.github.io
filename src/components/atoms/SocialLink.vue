@@ -23,7 +23,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .social-link {
-  background-color: #29c936;
+  background-color: #031927;
   width: 50px;
   height: 50px;
   border-radius: 5rem;

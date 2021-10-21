@@ -21,24 +21,23 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .box-skill {
-  border: 1px solid black;
   margin: 1rem 0;
   text-align: center;
   .title {
-    color: #055612;
+    color: #031927;
     font-size: 1em;
   }
   .skill {
     widows: 100%;
-    background-color: #91c321;
+    background-color: #9dd1f1;
     border-radius: 25px;
     margin-top: 3px;
     .quality {
       text-align: right;
       padding: 5px;
       font-size: 0.8rem;
-      color: #91c321;
-      background-color: #055612;
+      color: #c8e0f4;
+      background-color: #031927;
       border-radius: 25px 10px 10px 25px;
     }
     .js {

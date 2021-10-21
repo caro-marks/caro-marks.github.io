@@ -10,7 +10,6 @@
   &:hover {
     transform: scale(1.1);
     border-radius: 10px;
-    background-color: #29c936;
     cursor: pointer;
   }
 }

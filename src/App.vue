@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <Header />
-    <Presentation />
+    <Container>
+      <Home />
+    </Container>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Header, Presentation } from '@/components/organisms'
+import { Container } from '@/components/bosons'
+import { Home } from '@/components/templates'
 
 export default defineComponent({
   components: {
-    Header,
-    Presentation
+    Container,
+    Home
   }
 })
 </script>
@@ -21,7 +23,6 @@ export default defineComponent({
 #app {
   margin: 0;
   padding: 0 0.5em;
-  background: #27d1b4;
-  height: 50vh;
+  background: #031927;
 }
 </style>

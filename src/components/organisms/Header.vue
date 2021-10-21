@@ -24,22 +24,23 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .header {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   width: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   .logo {
     grid-row: 2;
+    padding-left: 0.1rem;
     justify-self: center;
   }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 915px) {
   .header {
     row-gap: 0.5em;
     display: grid;
-    grid-template-columns: 340px auto;
+    grid-template-columns: 50% auto;
     grid-template-rows: 1fr;
     .logo {
       grid-column: 1;

@@ -1,7 +1,7 @@
 <template>
   <div class="presentation">
     <div class="hi">
-      <span>I'm</span>
+      <span>I am</span>
       <Logo />
     </div>
     <img class="selfie" src="@/assets/images/selfie.jpeg" alt="Me smiling!" />
@@ -30,6 +30,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 .presentation {
   padding: 0 0.5rem;
   max-width: 50%;
@@ -45,7 +46,8 @@ export default defineComponent({
     padding: 0.2rem 0;
     span {
       font-size: 2.5rem;
-      font-family: serif;
+      color: #c8e0f4;
+      font-family: Montserrat;
       font-style: oblique;
     }
   }
@@ -55,9 +57,16 @@ export default defineComponent({
     border-radius: 150px;
   }
 }
-// @media only screen and (min-width: 700px) {
-//   .presentation {
-//     width: 50%;
-//   }
-// }
+
+@media only screen and (max-width: 915px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    .hi {
+      column-gap: 1.5rem;
+    }
+  }
+}
 </style>

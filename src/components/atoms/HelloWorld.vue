@@ -12,20 +12,22 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   data() {
     return {
-      text: 'Hello World'
+      text: 'HELLO WORLD'
     }
   }
 })
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 .typewriter {
   width: max-content;
   h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    color: #055612;
+    color: #c8e0f4;
     font-size: 3rem;
-    border-right: 0.15em solid #91c321; /* The typwriter cursor */
+    font-family: 'Montserrat';
+    border-right: 0.15em solid #9dd1f1; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.15em; /* Adjust as needed */
@@ -46,7 +48,7 @@ export default defineComponent({
     border-color: transparent;
   }
   50% {
-    border-color: #91c321;
+    border-color: #9dd1f1;
   }
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <nav class="nav-bar">
-    <NavItem text="Skills" to="/skills" />
-    <NavItem text="Projects" to="/projects" />
-    <NavItem text="Experiences" to="/experiences" />
-    <NavItem text="About me" to="/road" />
+    <NavItem text="SKILLS" to="/skills" />
+    <NavItem text="PROJECTS" to="/projects" />
+    <NavItem text="EXPERIENCES" to="/experiences" />
+    <NavItem text="ABOUT" to="/road" />
   </nav>
 </template>
 

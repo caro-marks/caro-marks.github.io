@@ -40,7 +40,7 @@ export default defineComponent({
   .header {
     row-gap: 0.5em;
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 59% auto;
     grid-template-rows: 1fr;
     .logo {
       grid-column: 1;

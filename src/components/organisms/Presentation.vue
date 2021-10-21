@@ -9,7 +9,7 @@
         <div class="logo">MARCOS.</div>
         <p>Jr Full Stack Developer</p>
       </div>
-      <SocialNetwork />
+      <SocialNetwork class="social-box" />
     </div>
   </div>
 </template>
@@ -69,6 +69,9 @@ export default defineComponent({
       p {
         font-size: 1.5rem;
       }
+    }
+    .social-box {
+      max-width: 500px;
     }
   }
 }

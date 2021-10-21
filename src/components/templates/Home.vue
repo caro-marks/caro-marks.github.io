@@ -1,26 +1,23 @@
 <template>
   <div class="box-home">
-    <Header />
-    <Presentation />
+    <Container>
+      <Header />
+      <Presentation />
+    </Container>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { Container } from '@/components/bosons'
 import { Header } from '@/components/organisms'
 import { Presentation } from '@/components/organisms'
 
 export default defineComponent({
   components: {
+    Container,
     Header,
     Presentation
   }
 })
 </script>
-
-<style lang="scss" scoped>
-.box-home {
-}
-@media only screen and (min-width: 915px) {
-}
-</style>

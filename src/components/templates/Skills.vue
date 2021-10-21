@@ -1,18 +1,19 @@
 <template>
   <div class="box-home">
     <Header />
-    <Presentation />
+    <SkillSet />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Header, Presentation } from '@/components/organisms'
+import { Header } from '@/components/organisms'
+import { SkillSet } from '@/components/molecules'
 
 export default defineComponent({
   components: {
     Header,
-    Presentation
+    SkillSet
   }
 })
 </script>

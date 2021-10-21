@@ -20,7 +20,8 @@ export default defineComponent({
 <style scoped>
 #app {
   margin: 0;
-  padding: 1em;
+  padding: 0 0.5em;
   background: #27d1b4;
+  height: 50vh;
 }
 </style>

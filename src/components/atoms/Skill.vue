@@ -21,6 +21,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .box-skill {
+  border: 1px solid black;
   margin: 1rem 0;
   text-align: center;
   .title {

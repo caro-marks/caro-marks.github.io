@@ -83,9 +83,9 @@ export default defineComponent({
     justify-items: center;
     .ho {
       .my-name {
-        background: #031927;
-        border-radius: 100px;
-        padding: 2rem;
+        color: #031927;
+        // border-radius: 100px;
+        // padding: 2rem;
       }
     }
   }

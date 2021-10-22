@@ -1,26 +1,14 @@
 <template>
-  <div id="app">
-    <Home />
-  </div>
+  <HomePage />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Home } from '@/components/templates'
+import { HomePage } from '@/components/pages'
 
 export default defineComponent({
   components: {
-    Home
+    HomePage
   }
 })
 </script>
-
-<style scoped>
-#app {
-  margin: 0;
-  padding: 0 0.5em;
-  background: #031927;
-  min-height: 333px;
-  max-height: 35vh;
-}
-</style>

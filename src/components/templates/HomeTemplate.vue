@@ -1,6 +1,6 @@
 <template>
-  <div class="box-home">
-    <Container>
+  <div class>
+    <Container class="home-template">
       <Header />
       <Presentation />
     </Container>
@@ -21,3 +21,10 @@ export default defineComponent({
   }
 })
 </script>
+<style lang="scss" scoped>
+.home-template {
+  margin: 5rem auto;
+  display: grid;
+  grid-auto-columns: auto;
+}
+</style>

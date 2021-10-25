@@ -1,5 +1,0 @@
-export { default as HomeTemplate } from './HomeTemplate.vue'
-export { default as SkillsTemplate } from './SkillsTemplate.vue'
-export { default as ProjectsTemplate } from './ProjectsTemplate.vue'
-export { default as ExperiencesTemplate } from './ExperiencesTemplate.vue'
-export { default as AboutTemplate } from './AboutTemplate.vue'

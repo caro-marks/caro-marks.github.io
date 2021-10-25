@@ -48,7 +48,7 @@ jobs:
         run: npm run lint
 
       - name: Deploy
-        uses: caro-marks/portfolio
+        uses: caro-marks/portfolio@v3
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
           publish_dir: ./dist

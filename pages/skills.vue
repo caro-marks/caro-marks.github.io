@@ -1,6 +1,6 @@
 <template>
-  <div class="homepage">
-    <Presentation />
+  <div class="app">
+    <SkillSet />
   </div>
 </template>
 <script lang="ts">
@@ -8,7 +8,7 @@ import Vue from 'vue'
 export default Vue.extend({
   layout: 'main',
   head: {
-    title: 'HomePage',
+    title: 'SkillSet',
   },
 })
 </script>

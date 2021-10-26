@@ -11,14 +11,8 @@
       <b-card-text>
         <h4>I'm under process of creating some amazing stuffs.</h4>
         <br />
-        <h5>Projects will be available in <em>almost</em> no time!</h5>
+        <h5>Projects will be available in <em>relatively</em> no time!</h5>
       </b-card-text>
     </b-card>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.works {
-  // display: grid;
-}
-</style>

@@ -20,7 +20,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .box-skill {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   text-align: center;
   .title {
     color: #031927;

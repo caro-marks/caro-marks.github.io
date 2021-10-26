@@ -14,7 +14,7 @@
           <NuxtLink to="/projects">PROJECTS</NuxtLink>
         </b-nav-item>
         <b-nav-item class="item">
-          <NuxtLink to="/sobre">ABOUT</NuxtLink>
+          <NuxtLink to="/about">ABOUT</NuxtLink>
         </b-nav-item>
       </b-nav>
     </nav>

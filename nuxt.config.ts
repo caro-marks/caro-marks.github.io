@@ -33,7 +33,7 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     // https://npmjs.com/package/@nuxtjs/style-resources
     '@nuxtjs/style-resources',
   ],
@@ -44,12 +44,12 @@ export default {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    baseURL:
-      process.env.NOD_ENV === 'production'
-        ? ''
-        : 'https://raw.githubusercontent.com/caro-marks/caro-marks.github.io/main/src/static/data',
-  },
+  // axios: {
+  //   baseURL:
+  //     process.env.NOD_ENV === 'production'
+  //       ? ''
+  //       : 'https://raw.githubusercontent.com/caro-marks/caro-marks.github.io/main/src/static/data',
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

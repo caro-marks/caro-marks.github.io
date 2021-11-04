@@ -8,10 +8,10 @@ jobs:
   cd:
     runs-on: [ubuntu-latest]
 
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [14]
+    # strategy:
+    #   matrix:
+    #     os: [ubuntu-latest]
+    #     node: [14]
 
     steps:
       - name: Checkout 🛎

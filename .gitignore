@@ -89,5 +89,5 @@ sw.*
 # Vim swap files
 *.swp
 
-# Github Actions
-.github
+# # Github Actions
+# .github

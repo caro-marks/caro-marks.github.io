@@ -1,0 +1,12 @@
+name: CD #optional
+on: [push] # specify workflow triggering
+jobs: # grouped jobs to run
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      uses: ashkantaravati/NuxtToGithubPages@v1.0
+      with:
+        username: 'caro-marks'
+        reponame: 'portfolio'
+        token: ${{ secrets.GITHUB_TOKEN }}

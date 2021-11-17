@@ -47,49 +47,19 @@
     justify-content: center;
   }
 }
-// .presentation {
-//   height: max-content;
-//   .ho {
-//     display: grid;
-//     grid-template-rows: 1fr 40%;
-//     text-align: center;
-//     align-items: center;
-//     .my-name {
-//       display: grid;
-//       grid-template-rows: 15% 35% auto;
-//       row-gap: 1rem;
-//       color: color('dark', 'darkest');
-//       span {
-//         font-size: 2rem;
-//       }
-//       .logo {
-//         font-size: 3rem;
-//         font-weight: bold;
-//       }
-//       ul {
-//         display: grid;
-//         grid-auto-rows: 2em;
-//         row-gap: 0.75em;
-//         li {
-//           font-size: 1.5rem;
-//         }
-//       }
-//     }
-//   }
-// }
-// @include screen('small', 'medium') {
-//   .presentation {
-//     grid-template-rows: 1fr 1fr;
-//     grid-template-columns: 1fr;
-//     justify-items: center;
-//     .ho {
-//       .my-name {
-//         ul {
-//           grid-auto-flow: column;
-//           column-gap: 0.75em;
-//         }
-//       }
-//     }
-//   }
-// }
+@include screen('small', 'medium') {
+  .presentation {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    .left-top {
+      .introducin {
+        ul {
+          grid-auto-flow: column;
+          column-gap: 0.5em;
+        }
+      }
+    }
+  }
+}
 </style>

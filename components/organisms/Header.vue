@@ -30,7 +30,7 @@
     background: color('dark', 'darkest');
     width: max-content;
     height: 50px;
-    padding: 0 10px;
+    padding: 0 2rem;
     border-radius: 35px;
     align-items: center;
     .items {

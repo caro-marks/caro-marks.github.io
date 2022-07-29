@@ -1,14 +1,14 @@
 <template>
   <div>
-    <NewHome />
+    <Presentation />
   </div>
 </template>
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  layout: 'new',
+  layout: 'main',
   head: {
-    title: 'Index',
+    title: 'HomePage',
   },
 })
 </script>

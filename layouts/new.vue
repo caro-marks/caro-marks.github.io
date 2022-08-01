@@ -1,13 +1,15 @@
 <template>
-  <b-container fluid class="m-auto p-4 bg-secondary">
-    <b-row class="m-auto p-2 bg-light">
-      HEADER
-    </b-row>
+  <b-container fluid class="new min-vh-100 d-flex flex-column justify-content-between">
+    <NewHeader />
     <Container>
       <Nuxt />
     </Container>
-    <b-row class="m-auto p-2 bg-light">
-      FOOTER
-    </b-row>
+    <NewFooter />
   </b-container>
 </template>
+<style lang='scss' scoped>
+.new {
+  background-color: color('dark', 'base');
+}
+</style>
+

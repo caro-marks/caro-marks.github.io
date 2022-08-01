@@ -27,31 +27,29 @@ export default Vue.extend({
   h1 {
     // width: 100%;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    color: #c8e0f4;
-    font-size: 1rem;
+    color: color('light', 'lightest');
+    font-size: 1.3rem;
     font-family: 'Montserrat';
-    border-right: 0.15em solid #9dd1f1; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.1em; /* Adjust as needed */
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    letter-spacing: 0.6em; /* Adjust as needed */
+    animation: flicker 1.5s infinite alternate;
   }
 }
-@keyframes typing {
-  from {
-    width: 0;
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 1px color('light', 'lightest'),
+      0 0 2px color('light', 'lightest'),
+      0 0 4px color('light', 'lightest'),
+      0 0 8px color('light'),
+      0 0 16px color('light'),
+      0 0 32px color('light'),
+      0 0 64px color('light', 'darkest'),
+      // 0 0 150px color('light', 'darkest');
   }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #9dd1f1;
+  20%, 24%, 55% {       
+    text-shadow: none;
   }
 }
 </style>

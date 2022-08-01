@@ -39,23 +39,23 @@
       align-items: center;
       justify-content: space-between;
       height: 100%;
-    }
-    .item a {
-      color: color('light', 'darkest');
-      position: relative;
-      font-weight: 500;
-      &:hover {
-        color: color('dark');
-        text-decoration: none;
-      }
-      &.nuxt-link-active:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background: color('light', 'darkest');
-        left: 0;
-        bottom: -16px;
+      .item a {
+        color: color('light', 'darkest');
+        position: relative;
+        font-weight: 500;
+        &:hover {
+          color: color('dark');
+          text-decoration: none;
+        }
+        &.nuxt-link-active:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          background: color('light', 'darkest');
+          left: 0;
+          bottom: -16px;
+        }
       }
     }
   }

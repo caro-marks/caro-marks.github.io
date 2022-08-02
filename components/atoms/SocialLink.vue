@@ -1,7 +1,9 @@
 <template>
-  <a class="social-link" :href="to">
-    <img :src="iconPath" :alt="name" />
-  </a>
+  <b-row class="m-auto py-3">    
+    <a class="py-2 vw-100 text-center social-link" :href="to">
+      {{ name }}
+    </a>
+  </b-row>
 </template>
 
 <script lang="ts">
@@ -10,33 +12,21 @@ import Vue from 'vue'
 export default Vue.extend({
   props: {
     name: { type: String, required: true },
-    icon: { type: String, required: true },
     to: { type: String, required: true },
-  },
-  computed: {
-    iconPath(): string {
-      return require(`@/assets/images/icons/${this.icon}`)
-    },
-  },
+  }
 })
 </script>
 
 <style lang="scss" scoped>
 .social-link {
-  background-color: color('dark');
-  width: 35px;
-  height: 35px;
   border-radius: 3em;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  transition: transform 0.2s linear;
+  background-color: rgba(color('light', 'darkest'), 0.45);
+  color: color('light');
+  box-shadow: 1px 1px 10px 1px rgba(color('light', 'lightest'), 0.65);
   &:hover {
-    transform: scale(1.1);
-  }
-  img {
-    width: 18px;
-    height: 18px;
+    text-decoration: none;
+    // transform: scale(1.02);
+    box-shadow: 1px 1px 15px 2px rgba(color('light', 'lightest'), 0.65);
   }
 }
 </style>

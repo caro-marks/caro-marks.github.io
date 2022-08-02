@@ -33,11 +33,11 @@ export default Vue.extend({
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.6em; /* Adjust as needed */
-    animation: flicker 1.5s infinite alternate;
+    animation: flicker 5s infinite alternate;
   }
 }
 @keyframes flicker {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  0%, 22%, 25%, 57%, 100% {
     text-shadow:
       0 0 1px color('light', 'lightest'),
       0 0 2px color('light', 'lightest'),
@@ -46,9 +46,9 @@ export default Vue.extend({
       0 0 16px color('light'),
       0 0 32px color('light'),
       0 0 64px color('light', 'darkest'),
-      // 0 0 150px color('light', 'darkest');
+      0 0 128px color('light', 'darkest');
   }
-  20%, 24%, 55% {       
+  20%, 24%, 55%, 66% {       
     text-shadow: none;
   }
 }

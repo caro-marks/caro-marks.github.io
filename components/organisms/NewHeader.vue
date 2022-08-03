@@ -1,8 +1,9 @@
 <template>  
-  <b-row class="new-header py-4 pl-5 text-align">
+  <b-row class="new-header py-4 d-flex justify-content-around">
     <NuxtLink to='/'>
       <HelloWorld />
     </NuxtLink>
+    <NavBar />
   </b-row>
 </template>
 

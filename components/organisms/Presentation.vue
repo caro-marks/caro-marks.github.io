@@ -17,10 +17,7 @@
     border: 5px solid color('light');
     border-radius: 40%;
   }
-  h4 {
+  h4, h5 {
     color: color('light');
-  }
-  h5 {
-    color: color('light',);
   }
 </style>

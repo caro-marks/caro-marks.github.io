@@ -1,30 +1,21 @@
 <template>
-  <div class="nav-bar">
-    <div class="nav-item">
-      <NuxtLink to="/skills">SKILLS</NuxtLink>
+  <div class="d-flex">
+    <div class="mr-1">
+      <NuxtLink to="/projects">portfolio</NuxtLink>
     </div>
-    <div class="nav-item">
-      <NuxtLink to="/projects">PROJECTS</NuxtLink>
-    </div>
-    <div class="nav-item">
-      <NuxtLink to="/sobre">ABOUT</NuxtLink>
+    <div class="ml-1">
+      <NuxtLink to="/about">about me</NuxtLink>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.nav-bar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-content: space-around;
-}
-.nav-item a {
-  color: color('light', 'base');
+  a {
+  color: color('light', 'darkest');
   position: relative;
   font-weight: 500;
   &:hover {
-    color: color('dark', 'darkest');
+    color: color('light');
     text-decoration: none;
   }
   &.nuxt-link-active:after {

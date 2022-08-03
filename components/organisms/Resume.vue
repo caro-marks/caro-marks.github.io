@@ -1,5 +1,5 @@
 <template>
-  <div class="resume">
+  <div class="resume my-4">
     <h3>Hi, there! Please to meet me (;</h3>
 
     <br />
@@ -45,3 +45,18 @@
     </p>
   </div>
 </template>
+<style lang="scss" scoped>
+p {
+  color: color('light');
+}
+h3 {
+  color: color('light', 'darkest')
+}
+h4 {
+  color: rgba(color('light', 'darkest'), 0.75);
+  text-shadow: 0px 0px 1px rgba(color('light'), .5),
+    0px 0px 2px rgba(color('light','lightest'), 0.25),
+    // 0px 0px 1px color('light', 'darkest'),
+    // 0px 0px 1px color('light', 'darkest');
+}
+</style>

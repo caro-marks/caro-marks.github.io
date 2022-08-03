@@ -20,7 +20,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .social-link {
   border-radius: 3em;
-  background-color: rgba(color('light', 'darkest'), 0.45);
+  background-color: rgba(color('light', 'darkest'), 0.30);
   color: color('light');
   box-shadow: 1px 1px 10px 1px rgba(color('light', 'lightest'), 0.65);
   &:hover {

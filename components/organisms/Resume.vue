@@ -2,6 +2,8 @@
   <div class="resume my-4">
     <h3>Hi, there! Please to meet me (;</h3>
 
+    <SkillView />
+    
     <br />
     <h4><strong>Who and where am I?</strong></h4>
     <p>

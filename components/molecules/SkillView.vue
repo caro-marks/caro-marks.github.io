@@ -7,7 +7,7 @@
           <h4>Front-End</h4>
         </b-row>
         <b-row class="d-flex justify-content-center h-50 py-1">
-          <p class="text-center">
+          <p class="text-center font-weight-bold">
             Build designed interfaces, with responsivity and a bit of
             UX.
           </p>
@@ -21,7 +21,7 @@
           <h4>Back-End</h4>
         </b-row>
         <b-row class="d-flex justify-content-center h-50 py-1">
-          <p class="text-center">
+          <p class="text-center font-weight-bold">
               API building, DB modelling,
             server refactoring, and integrations.
           </p>
@@ -33,11 +33,14 @@
 
 <style lang="scss" scoped>
   .skillview {
-    background-color: rgba(color('light', ), 0.9);
-    border: 1px solid color('dark', 'darkest');
+    background-color: rgba(color('light', 'darkest'), 0.5);
+    border: 2px double color('dark');
     border-radius: 3rem;
   }
   img {
     max-height:80%;
+  }
+  h4, p {
+    color: rgb(225, 200, 225)
   }
 </style>

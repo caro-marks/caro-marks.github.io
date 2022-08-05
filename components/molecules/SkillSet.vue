@@ -1,11 +1,11 @@
 <template>
   <div class="d-flex flex-column mt-3 py-2">
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center" role="tab">
       <b-button v-b-toggle.collapse-skills class="more text-center p-1 w-50">
       Skills
     </b-button>
     </div>
-    <b-collapse id="collapse-skills" class="mt-2 skillset">
+    <b-collapse id="collapse-skills" accordion="r-accordion" class="mt-2 skillset">
       <Skill name="Physics" rate="92%" class-name="phys" />
       <Skill name="English" rate="90%" class-name="eng" />
       <Skill name="Python" rate="86%" class-name="py" />

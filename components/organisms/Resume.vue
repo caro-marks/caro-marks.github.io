@@ -4,9 +4,11 @@
 
     <SkillView />
 
-    <SkillSet />
+    <div class="accordion" role="tablist">
+      <SkillSet />
     
-    <Quests />
+      <Quests />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>

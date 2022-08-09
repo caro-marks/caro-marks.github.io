@@ -1,9 +1,23 @@
 <template>
   <div class="samples">
     <b-card
+      img-src="@/assets/images/jtc.png"
+      class="overflow-hidden text-center"
+      footer="Advocate Page"
+      footer-tag="h3"
+    >
+    </b-card>
+    <b-card
       img-src="@/assets/images/ibo1.png"
       class="overflow-hidden text-center"
       footer="Ibook"
+      footer-tag="h3"
+    >
+    </b-card>
+    <b-card
+      img-src="@/assets/images/pkdx.png"
+      class="overflow-hidden text-center"
+      footer="Pokedex"
       footer-tag="h3"
     >
     </b-card>
@@ -25,6 +39,13 @@
       img-src="@/assets/images/faq1.png"
       class="overflow-hidden text-center"
       footer="FAQ Cataline"
+      footer-tag="h3"
+    >
+    </b-card>
+    <b-card
+      img-src="@/assets/images/eco.png"
+      class="overflow-hidden text-center"
+      footer="Ecoleta"
       footer-tag="h3"
     >
     </b-card>

@@ -26,7 +26,7 @@ export default Vue.extend({
     color: rgb(225, 200, 225);
     font-size: 1em;
   }
-  .skill {
+  .skill {  
     widows: 100%;
     background-color: color('light', 'darkest');
     border-radius: 25px;
@@ -39,44 +39,47 @@ export default Vue.extend({
       background-color: color('dark', 'darkest');
       border-radius: 25px 10px 10px 25px;
     }
-    .js {
-      width: 77%;
-    }
-    .ts {
-      width: 58%;
-    }
-    .html {
-      width: 75%;
-    }
-    .css {
-      width: 73%;
-    }
-    .vue {
-      width: 72%;
-    }
-    .dj {
-      width: 80%;
-    }
-    .py {
-      width: 86%;
-    }
-    .dk {
-      width: 46%;
-    }
-    .git {
-      width: 69%;
-    }
-    .aws {
-      width: 42%;
+    .lgc {
+      width: 92%;
     }
     .eng {
       width: 90%;
     }
-    .des {
-      width: 27%;
+    .py {
+      width: 88%;
     }
-    .phys {
-      width: 92%;
+    .html {
+      width: 86%;
+    }
+    .js {
+      width: 84%;
+    }
+    .dj {
+      width: 82%;
+    }
+    .rct {
+      width: 80%;
+    }
+    .css {
+      width: 78%;
+    }
+    .vue {
+      width: 76%;
+    }
+    .git {
+      width: 68%;
+    }
+    .ts {
+      width: 58%;
+    }
+    .aws {
+      width: 42%;
+    }
+    .dk {
+      width: 46%;
+    }
+    .des {
+      width: 32%;
     }
   }
 }

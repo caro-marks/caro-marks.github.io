@@ -6,19 +6,21 @@
     </b-button>
     </div>
     <b-collapse id="collapse-skills" accordion="r-accordion" class="mt-2 skillset">
-      <Skill name="Physics" rate="92%" class-name="phys" />
+      <Skill name="Logic" rate="92%" class-name="lgc" />
       <Skill name="English" rate="90%" class-name="eng" />
-      <Skill name="Python" rate="86%" class-name="py" />
-      <Skill name="Django" rate="80%" class-name="dj" />
-      <Skill name="Javascript" rate="77%" class-name="js" />
-      <Skill name="Html" rate="75%" class-name="html" />
-      <Skill name="Css" rate="73%" class-name="css" />
-      <Skill name="Vue" rate="72%" class-name="vue" />
-      <Skill name="Git" rate="69%" class-name="git" />
+      <Skill name="Python" rate="88%" class-name="py" />
+      <Skill name="Html" rate="86%" class-name="html" />
+      <Skill name="Javascript" rate="84%" class-name="js" />
+      
+      <Skill name="Django" rate="82%" class-name="dj" />
+      <Skill name="React.js" rate="80%" class-name="rct" />
+      <Skill name="CSS" rate="78%" class-name="css" />
+      <Skill name="Vue.js" rate="76%" class-name="vue" />
+      <Skill name="Git" rate="68%" class-name="git" />
       <Skill name="Typescript" rate="58%" class-name="ts" />
       <Skill name="Docker" rate="46%" class-name="dk" />
       <Skill name="AWS" rate="42%" class-name="aws" />
-      <Skill name="Design" rate="27%" class-name="des" />
+      <Skill name="Design" rate="32%" class-name="des" />
     </b-collapse>
   </div>
 </template>
